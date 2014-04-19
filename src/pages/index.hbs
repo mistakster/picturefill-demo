@@ -1,0 +1,11 @@
+---
+picturefill: ../assets/js/picturefill-2.0.js
+---
+
+<div class="wrap">
+    <div class="grid">
+        {{#pictures}}
+            <figure class="cell">{{> picture}}<figcaption>{{name}}</figcaption></figure>
+        {{/pictures}}
+    </div>
+</div>

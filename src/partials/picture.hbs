@@ -1,0 +1,11 @@
+<picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 960px)" srcset="
+        http://www.ucarecdn.com/{{uuid}}/-/scale_crop/479x319/center/{{dashify name}}.jpg,
+        http://www.ucarecdn.com/{{uuid}}/-/scale_crop/958x638/center/{{dashify name}}.jpg 2x">
+    <source srcset="
+        http://www.ucarecdn.com/{{uuid}}/-/scale_crop/120x120/center/{{dashify name}}.jpg,
+        http://www.ucarecdn.com/{{uuid}}/-/scale_crop/240x240/center/{{dashify name}}.jpg 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img alt="{{name}}" src="http://www.ucarecdn.com/{{uuid}}/-/scale_crop/120x120/center/{{dashify name}}.jpg">
+</picture>
