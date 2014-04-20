@@ -5,7 +5,12 @@ picturefill: ../assets/js/picturefill-1.2.js
 <div class="wrap">
     <div class="grid">
         {{#pictures}}
-            <figure class="cell">{{> picture-span}}<figcaption>{{name}}</figcaption></figure>
+            <figure class="cell">
+                <span data-picture data-alt="{{name}}" class="picture">
+{{> span-srcset}}
+                </span>
+                <figcaption>{{name}}</figcaption>
+            </figure>
         {{/pictures}}
     </div>
 </div>

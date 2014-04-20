@@ -1,0 +1,49 @@
+---
+picturefill: ../assets/js/picturefill-1.2.js
+---
+
+<div class="wrap">
+    <div class="grid">
+        {{#pictures}}
+            <figure class="cell">
+                <span data-alt="{{name}}" class="picture picture_loading_yes">
+{{> span-srcset}}
+                </span>
+                <figcaption>{{name}}</figcaption>
+            </figure>
+        {{/pictures}}
+    </div>
+</div>
+
+<script>
+    (function (w) {
+
+        function bindLoader(picture) {
+            // picture.className += ' picture_loading_yes';
+            picture.setAttribute('data-picture', '');
+
+            var img = document.createElement('img');
+
+            function handler() {
+                setTimeout(function () {
+                    picture.className = picture.className.replace(' picture_loading_yes', ' picture_loading_no');
+                }, Math.random() * 2000);
+            }
+
+            if (w.addEventListener) {
+                img.addEventListener("load", handler, false);
+            } else {
+                img.attachEvent("onload", handler);
+            }
+
+            picture.appendChild(img);
+        }
+
+        var pictures = document.querySelectorAll('.picture');
+
+        for (var i = 0; i < pictures.length; i++) {
+            bindLoader(pictures[i]);
+        }
+        picturefill();
+    }(window));
+</script>

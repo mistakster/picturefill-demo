@@ -35,6 +35,15 @@ module.exports = function(grunt) {
             }
         },
 
+        // autoprefixer
+        autoprefixer: {
+            dist: {
+                files: {
+                    'assets/css/all.css': 'assets/css/all.css'
+                }
+            }
+        },
+
         // file watcher
         watch: {
             options: {
@@ -47,7 +56,7 @@ module.exports = function(grunt) {
             },
             styles: {
                 files: ['assets/less/**/*.less'],
-                tasks: 'less'
+                tasks: ['less', 'autoprefixer']
             }
         },
 
@@ -68,8 +77,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
     grunt.registerTask('server', ['connect', 'watch']);
-    grunt.registerTask('default', ['assemble', 'less']);
+    grunt.registerTask('default', ['assemble', 'less', 'autoprefixer']);
 
 };
