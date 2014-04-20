@@ -14,6 +14,7 @@ module.exports = function(grunt) {
                 layoutdir: 'src/layouts',
                 layout: 'default.hbs',
                 partials: ['src/partials/*.hbs'],
+                helpers: ['src/helpers/*.js'],
                 data: ['src/data/*.yaml'],
                 flatten: true
             },

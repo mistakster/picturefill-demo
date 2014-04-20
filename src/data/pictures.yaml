@@ -6,10 +6,10 @@
   name: Firework
 -
   uuid: 5f92f124-2c38-4000-b139-ef9f6206caf1
-  name: Dew
+  name: Morning dew
 -
   uuid: 72e450fe-26ba-42cc-a49e-6c4b7958eff7
-  name: Greece
+  name: Meteora (Greece)
 -
   uuid: 76da2853-39e4-41bf-8f6c-81662695e74d
   name: Stockholm
@@ -27,7 +27,7 @@
   name: Coins
 -
   uuid: b58d7a7a-a551-4ecb-8709-ee43e8239faf
-  name: Sculpture
+  name: Black & White
 -
   uuid: b820a490-e21c-4dbc-9bc1-4f476de08e87
   name: Dandelion
@@ -36,7 +36,7 @@
   name: Electric
 -
   uuid: cdee3445-7b3b-4dfb-aee9-32120931e8bb
-  name: Car
+  name: Rusty car
 -
   uuid: cf028233-4645-4619-8e23-6e9597ccc61f
   name: Rainbow
@@ -51,10 +51,10 @@
   name: Spring
 -
   uuid: e71d98be-c777-4c2a-87d1-f5b165945839
-  name: Willow
+  name: Pussy willow
 -
   uuid: f8c875dd-b7dd-4259-b481-7cca43dd34cb
   name: Bumblebee
 -
   uuid: fafc3855-6332-4241-88db-5d1fb9a77077
-  name: Night
+  name: Night city
